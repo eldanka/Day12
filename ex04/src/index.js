@@ -1,6 +1,9 @@
 function sumFibonacci(num) {
-    if (num <= 1) return num;
-
+    if (num <= 0) {
+        return 0;
+    } else if (num == 1) {
+        return num;
+    }
     const arrFib = [1, 1];
     let nextFib = 0;
 
@@ -13,6 +16,6 @@ function sumFibonacci(num) {
 console.log(sumFibonacci(1));
 console.log(sumFibonacci(10));
 console.log(sumFibonacci(20));
-console.log(sumFibonacci(5));
-console.log(sumFibonacci(0));
+console.log(sumFibonacci(4));
+console.log(sumFibonacci(-5));
 module.exports = sumFibonacci;
